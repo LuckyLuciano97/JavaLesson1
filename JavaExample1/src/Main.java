@@ -1,20 +1,12 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+import java.time.LocalDateTime;//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
 
-        int sum = 0;
-        for (int i = 1; i <= 100; i++){
-            if(i % 5 == 0) {
-                System.out.println("i/5: " + sum);
-
-                sum += i;
+        LocalDateTime dt = LocalDateTime.now();
+        System.out.println(dt);
             }
         }
 
             //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
             // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println(sum);
-
-    }
-}
