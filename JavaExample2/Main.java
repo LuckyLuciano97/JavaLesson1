@@ -18,14 +18,14 @@ public class Main {
         /// Zadatak 3 ///
 
         Scanner scn = new Scanner(System.in);
-        System.out.println("Unesi dužinu katete a");
+        System.out.println("Unesi dužinu katete a (cm)");
         double katetaA = scn.nextDouble();
 
-        System.out.println("Unesi dužinu katete b");
+        System.out.println("Unesi dužinu katete b (cm)");
         double katetaB = scn.nextDouble();
 
         double hipotenuza = (Math.sqrt(Math.pow(katetaA, 2) + Math.pow(katetaB, 2)));
-        System.out.println("Dužina hipotenuze je " + hipotenuza);
+        System.out.printf("Dužina hipotenuze je %.4f", hipotenuza);
 
 
     }
