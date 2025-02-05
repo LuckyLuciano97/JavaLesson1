@@ -28,6 +28,7 @@ public class Main {
 
 
         while (imePrezime[0].length() > 7) {
+            System.out.println(imePrezime[0].length());
             System.out.println("Ime sadrži više od 7 znakova, molimo ponovno unesite ime");
             fullName = sc.nextLine().trim();
             imePrezime = fullName.split(" ");
