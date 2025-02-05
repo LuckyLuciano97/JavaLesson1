@@ -16,6 +16,8 @@ public class Main {
             if (brojNovcanica > 0) {
                 System.out.print(brojNovcanica + "*" + iznosNovcanice + "€ ");
                 iznos = iznos % iznosNovcanice;
+
+
             }
         }
 
