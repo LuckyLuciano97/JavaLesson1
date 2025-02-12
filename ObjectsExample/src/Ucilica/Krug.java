@@ -22,8 +22,7 @@ public class Krug {
     public Krug(String naziv, double radius) {
         this.naziv = naziv;
         this.radius = radius;
-        this.obseg = 2* PI * radius;
-        this.površina = PI * Math.pow(radius, 2);
+        izračunajObsegPovršinu();
     }
 
     public void izračunajObsegPovršinu(){

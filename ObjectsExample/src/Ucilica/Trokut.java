@@ -16,10 +16,7 @@ public class Trokut {
         this.stranicaA = stranicaA;
         this.stranicaB = stranicaB;
         this.stranicaC = stranicaC;
-        this.obseg = stranicaA+stranicaB+stranicaC;
-
-        double semi = obseg/2;
-        this.površina = Math.sqrt((semi*(semi-stranicaA)*(semi-stranicaB)*(semi-stranicaC)));
+        izračunajObsegPovršinu();
 
     }
 

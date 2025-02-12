@@ -12,8 +12,7 @@ public class Pravokut {
         this.naziv = naziv;
         this.stranicaA = stranicaA;
         this.stranicaB = stranicaB;
-        this.obseg = 2*stranicaA + 2*stranicaB;
-        this.površina = stranicaA * stranicaB;
+        izračunajObsegPovršinu();
     }
 
     public void izračunajObsegPovršinu() {
