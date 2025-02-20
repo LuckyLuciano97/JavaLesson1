@@ -12,6 +12,7 @@ public class Main {
         for (Zivotinja z : zivotinje) {
             z.seZove();
             z.glasanje();
+            System.out.println("");
         }
     }
 }
