@@ -29,7 +29,6 @@ public class Aplikacija {
         System.out.println("\nLikovi");
         ucilica.ispišiSveLikove();
 
-        // Sortiranje i ispis likova po površini
         System.out.println("\nSortirani likovi");
         ucilica.ispišiSortiranoPoPovrišni();
     }
