@@ -1,35 +1,30 @@
 package Ucilica;
 
-public class Trokut {
+public class Trokut extends GeoLik {
 
-    private String naziv;
     private double stranicaA;
     private double stranicaB;
     private double stranicaC;
-    private double obseg;
-    private double površina;
-
-
 
     public Trokut(String naziv, double stranicaA, double stranicaB, double stranicaC) {
-        this.naziv = naziv;
+        super(naziv);
         this.stranicaA = stranicaA;
         this.stranicaB = stranicaB;
         this.stranicaC = stranicaC;
         izračunajObsegPovršinu();
-
     }
 
+    @Override
     public void izračunajObsegPovršinu(){
-        this.obseg = stranicaA+stranicaB+stranicaC;
-        double semi = obseg/2;
-        this.površina = Math.sqrt((semi*(semi-stranicaA)*(semi-stranicaB)*(semi-stranicaC)));
+        this.obseg = stranicaA + stranicaB + stranicaC;
+        double semi = obseg / 2;
+        this.površina = Math.sqrt((semi * (semi - stranicaA) * (semi - stranicaB) * (semi - stranicaC)));
     }
 
     @Override
     public String toString() {
         return "Trokut{" +
-                "naziv='" + naziv + '\'' +
+                "naziv='" + getNaziv() + '\'' +
                 ", stranicaA=" + stranicaA +
                 ", stranicaB=" + stranicaB +
                 ", stranicaC=" + stranicaC +

@@ -1,29 +1,27 @@
 package Ucilica;
 
-public class Pravokut {
+public class Pravokut extends GeoLik {
 
-    private String naziv;
     private double stranicaA;
     private double stranicaB;
-    private double obseg;
-    private double površina;
 
     public Pravokut(String naziv, double stranicaA, double stranicaB) {
-        this.naziv = naziv;
+        super(naziv);
         this.stranicaA = stranicaA;
         this.stranicaB = stranicaB;
         izračunajObsegPovršinu();
     }
 
+    @Override
     public void izračunajObsegPovršinu() {
-        this.obseg = 2*stranicaA + 2*stranicaB;
+        this.obseg = 2 * stranicaA + 2 * stranicaB;
         this.površina = stranicaA * stranicaB;
     }
 
     @Override
     public String toString() {
         return "Pravokut{" +
-                "naziv='" + naziv + '\'' +
+                "naziv='" + getNaziv() + '\'' +
                 ", stranicaA=" + stranicaA +
                 ", stranicaB=" + stranicaB +
                 ", obseg=" + obseg +
