@@ -1,0 +1,6 @@
+Automobil{regBroj=12345, marka='Toyota', godinaProizvodnje=2020', brojVrata=5}
+Automobil{regBroj=67890, marka='BMW', godinaProizvodnje=2022', brojVrata=3}
+Automobil{regBroj=54321, marka='Mercedes', godinaProizvodnje=2019', brojVrata=4}
+Motocikl{regBroj=123141, marka='Suzuki', godinaProizvodnje=2005', tipMotora='Enduro'}
+Motocikl{regBroj=987654, marka='Honda', godinaProizvodnje=2018', tipMotora='Sport'}
+Motocikl{regBroj=456789, marka='Yamaha', godinaProizvodnje=2021', tipMotora='Cruiser'}
