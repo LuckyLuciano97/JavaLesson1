@@ -18,7 +18,7 @@ public class EvidencijaVozila {
                 writer.println(vozilo.prikaziPodatke());
             }
         } catch (IOException e) {
-            System.out.println("Greška pri spremanju podataka: " + e.getMessage());
+            System.out.println("Greška: " + e.getMessage());
         }
     }
 
@@ -26,10 +26,10 @@ public class EvidencijaVozila {
         try (BufferedReader reader = new BufferedReader(new FileReader(datoteka))) {
             String line;
             while ((line = reader.readLine()) != null) {
-                System.out.println(line); // Simply read and print each line
+                System.out.println(line);
             }
         } catch (IOException e) {
-            System.out.println("Greška pri učitavanju podataka: " + e.getMessage());
+            System.out.println("Greška: " + e.getMessage());
         }
     }
 
@@ -53,7 +53,7 @@ public class EvidencijaVozila {
             evidencija.dodajVozilo(m3);
 
             evidencija.spremiPodatkeUDatoteku("vozila.txt");
-            System.out.println("Podaci su spremljeni u datoteku.");
+            System.out.println("Podaci spremljeni u datoteku.");
 
             System.out.println("\nUčitani podaci iz datoteke:");
             evidencija.ucitajPodatkeIzDatoteke("vozila.txt");
